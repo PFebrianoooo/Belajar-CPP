@@ -1,0 +1,57 @@
+belajar c++ [ dasar ]
+
+// dasar -3 starts //
+#include <iostream> *header*
+dinamakan include berfungsi untuk mengcopy semua yang ada di file dan langsung ditaruh di iostream itu sendiri.
+dimana iostream berisi input output dimana akan di alirkan dan di tampilkan pada cmd
+
+yang tidak akan di eksekusi 
+1. line kosong
+2. komenntar (//)
+3. multi line comment (/* ........ */)
+
+main (){}
+berfungsi dimana mesinn pertama kali mencari yang pertama kali di eksekusi diibaratkan pintu pada rumah
+
+int main (){} pasangannya return 0; merupakan fungsi
+int fungsi 
+cout fungsi output
+
+std::....
+standard liblary dari iostream
+
+endl
+akhir spasi kebawah seperti \n
+// dasar -3 end //
+
+// dasar -4 starts //
+penjelasan reprocessing linking and compiling.
+// dasar -4 end //
+
+// dasar -5 starts //
+menggunakan aplikasi code blocks
+mereview ulang cara compile link and reprocessing 
+untuk penggunaan aplkasi sublime text, vs code ide 
+untuk penggunaan dev c++ pada aplikasi diatas perlu, tetapi untuk penggunaan langsung menggunakan dev c++ biasa tidak. karena pada dev c++ biasa langsung otomatis di compiile and run secara langsung
+// dasar -5 end // 
+
+// dasar -6 start // 
+int main (){
+std::cout << "halo dunia" << std::end;
+std::cin.get();
+}
+nb:
+std berasal dari iostream
+:: mengambil fungsi dari cout
+<< "halo dunia" insertion memasukkan ke cout\
+<< std::endl; insertion memasukkan ke hello dunia endl ( akhir dari baris )
+std::cin untuk menginputkan
+get(); untuk mengambil enter pada keyboard
+return 0; untuk membuktikan ada error di syntax
+"" diberi nama string atau text yang bisa di tampilkan ke cout
+ 
+// dasar -6 end //
+
+
+
+
