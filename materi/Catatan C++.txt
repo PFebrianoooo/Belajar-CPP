@@ -1,4 +1,5 @@
 belajar c++ [ dasar ]
+channel youtube kelas terbuka materi belajar c++
 
 // dasar -3 starts //
 #include <iostream> *header*
@@ -7,7 +8,7 @@ dimana iostream berisi input output dimana akan di alirkan dan di tampilkan pada
 
 yang tidak akan di eksekusi 
 1. line kosong
-2. komenntar (//)
+2. komentar (//)
 3. multi line comment (/* ........ */)
 
 main (){}
@@ -26,13 +27,22 @@ akhir spasi kebawah seperti \n
 
 // dasar -4 starts //
 penjelasan reprocessing linking and compiling.
+
+compiling : file.exe
+
+alurnya:
+syntax/source code > reprocessing > compiling
+untuk hanya 1 file
+
+alurnya:
+syntax/source code di compile masing-masing (reprocessing) > linking (menggambungkan setiap source code yang sudah di reprocessing seblumnya) > compiling (hasil compile smemua file)
 // dasar -4 end //
 
 // dasar -5 starts //
 menggunakan aplikasi code blocks
 mereview ulang cara compile link and reprocessing 
 untuk penggunaan aplkasi sublime text, vs code ide 
-untuk penggunaan dev c++ pada aplikasi diatas perlu, tetapi untuk penggunaan langsung menggunakan dev c++ biasa tidak. karena pada dev c++ biasa langsung otomatis di compiile and run secara langsung
+untuk penggunaan dev c++ pada aplikasi diatas perlu, tetapi untuk penggunaan langsung menggunakan dev c++ biasa tidak. karena ,pada dev c++ biasa langsung otomatis di compiile and run secara langsung
 // dasar -5 end // 
 
 // dasar -6 start // 
@@ -100,7 +110,26 @@ dan modulus tidak bisa menggambungkan 2 tipe data
 // dasar -10 ends //
 
 // dasar -11 starts //
-/// dasar -11 ends
+komparasi atau membandingkan 2 nilai baik sama dengan, kurang dari, lebih dari ,kurang dari sama dengan, lebih dari sama dengan, serta tidak sebanding
+// dasar -11 ends //
+
+// dasar -12 starts //
+operator logika adalah operator yang di gunakan pada syntax 
+not or and.
+not (!)
+menegasikan atau melawan.
+and (&&)
+kedua nilai yang benar hasilkan true
+or (||)
+salah satu nilainya true maka hasilnya true
+
+NB 
+untuk lebih jelas mengenai operator logika bisa pelajari materi aljabar boolean
+// dasar -12 ends //
+
+// dasar -13 starts //
+
+// dasar -13 ends //
 
 
 
