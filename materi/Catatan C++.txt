@@ -49,9 +49,58 @@ std::cin untuk menginputkan
 get(); untuk mengambil enter pada keyboard
 return 0; untuk membuktikan ada error di syntax
 "" diberi nama string atau text yang bisa di tampilkan ke cout
- 
 // dasar -6 end //
 
+// dasar -7 starts //
+menaruh apapun kedalam huruf atau kelas.
+cara inialisasi.
+tipe data , diikuti variabel.
+contoh: int x; atau short x = 10;
+cara deklarasi.
+int i, int x int y short y dsb
+// dasar -7 ends //
+
+// dasar -8 starts //
+fungsi using namespace std;
+tidak perlu menulis std:: pada console
+penulisan console cin atau cout.
+cin >> ....;
+cout << .....;
+cara membaca cin kita masukkan data kedalam ....
+// dasar -8 ends //
+
+// dasar -9 starts //
+tipe data.
+tope data merupakan hal yang mendasar dalam c++ untuk mendeklarasikan variabel agar dibaca oleh komputer.
+1 byte = 8 bit.
+jumlah data yang bisa di tampung tipe data
+
+macam - macam tipe data:
+fundamental
+1. short (16 bit)
+2. int (32 bit) unsign (untuk meniadakan negatif)
+3. long (64 bit)
+ketiga diatas merupakan untuk bilangan bulat.
+1. float ()
+2. double ()
+kedua diatas untuk bilangan berkoma atau decimal
+1. char (8 bit)
+diatas merupakan untuk bilangan berkarakter
+1. boolean (1 byte)
+diatas merupakan tipe data untuk menyatakan true atau false.
+
+kumpulan karakter
+1. string 
+merupakan tipe data untuk kumpulan karakter 
+// dasar -9 ends //
+
+// dasar -10 starts //
+untuk hasil dari opersi aritmatika agar menjadi koma memori yang ditaro salah satunya harus bertipe data float
+dan modulus tidak bisa menggambungkan 2 tipe data
+// dasar -10 ends //
+
+// dasar -11 starts //
+/// dasar -11 ends
 
 
 
