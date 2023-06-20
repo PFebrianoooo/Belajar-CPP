@@ -106,7 +106,7 @@ merupakan tipe data untuk kumpulan karakter
 
 // dasar -10 starts //
 untuk hasil dari opersi aritmatika agar menjadi koma memori yang ditaro salah satunya harus bertipe data float
-dan modulus tidak bisa menggambungkan 2 tipe data
+dan modulus tidak bisa menggabungkan 2 tipe data
 // dasar -10 ends //
 
 // dasar -11 starts //
@@ -128,8 +128,96 @@ untuk lebih jelas mengenai operator logika bisa pelajari materi aljabar boolean
 // dasar -12 ends //
 
 // dasar -13 starts //
+if (kondisi){
+statement
+}
 
+jika kondisi terpenuhi maka akan dijalankan statmentnya.
+apabila kondisi tidak terpenuhi maka langsung menuju ke statment selanjutnya diluar if .
 // dasar -13 ends //
+// dasar -14 starts //
+if else statement 
+if (kondisi){
+statement
+} else {
+statemnet
+}
 
+jika kondisi if terpenuhi maka else tidak di eksekusi.
+jika kondisi if tidak terpenuhi maka dilanjutkan ke statment else.
+// dasar -14 ends //
 
+// dasar -15 starts //
+switch case 
+switch (kondisi/variable){
+case 1: {
+statement
+break;
+}
+case 2: {
+statement
+break;
+}
+
+sama halnya dengan kondisi if else tetapi pada switch case mrubah kondisi / variable dengan bberapa case / kasus.
+tanpa ada break semua case atau kasus akan di eksekusi 
+fungsi break ialah untuk memberhentikan pada case yang terpenuhi dan mengabaikan case - case yang ada.
+// dasar -15 ends //
+
+// dasar -16 starts //
+membuat kalkulator sederhana (selesai).
+ubah menggunakan switch case.
+// dasar -16 ends //
+
+// dasar -17 stats //
+assigment operator
+mempermudah penulisan syntax yang pada awal mula
+a = a + 3 ;
+menjadi
+a += 3 ;
+a -= 3 ;
+a /= 3 ;
+a %= 3 ;
+a *= 3 ;
+// dasar -17 ends //
+
+// dasar -18 starts //
+increment dan decrement
+increment 
+pre dan post increment 
+yang sebelumnya a = a + 1 disederhanakan menjadi a++ peningkatannya adalah 1 nilai
+a++ = post increment (dibelakangnya) nambah 1 nilai
+++a = pre incrememt (didepannya) nambah 1 nilai
+increment apabila didalam fungsi maka 
+post incremement
+cout << a++ << endl; (di print dulu di a baru di tambahkan)
+cout << a << endl; (ngeprint hasil fungsi diatas)
+pre decrement 
+cout << ++a << endl; (di tambahkan dulu baru di print a nya)
+cout << a << endl; (di print hasil fungsi diatas)
+decrement 
+a--
+--a
+penjelasan mengenai decrement kebalikan dari incrment
+// dasar -19 ends //
+
+// dasar -20 stars //
+while (syarat){aksi/syntax}
+syarat dalam bentuk yes atau no dalam bentuk boolean
+akan selalu looping apabila syarat selalu true(yes). maka perlu adanya batasan untuk membatasi loopingnya (no)
+ada kemingkinan apabila syarat tidak terpenuhi maka tidak ada aksi yang dilakukan.
+// dasar -20 ends //
+
+// dasar -21 starts //
+do while loop
+do {aksi} while (syarat);
+cara eksekusinya melakukan aksi akan dilakukan minimal 1 kali dulu baru di cek syaratnya
+kesimpulannya:
+bahwa do while apabila syaratnya sudah terpenuhi maka looping terus apabila syaratnya tidak terpenuhi maka tetep ngeprint yang di aksikan sebelumnya pada while minimal 1 kali.
+// dasar -21 ends //
+
+// dasar -22 starts //
+for loop 
+for (inisialisasi; loop kondisi; increment) {aksinya}
+// dasr -22 ends //
 
