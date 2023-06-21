@@ -221,3 +221,21 @@ for loop
 for (inisialisasi; loop kondisi; increment) {aksinya}
 // dasr -22 ends //
 
+// dasar -21 starts //
+break and continue 
+break digunakan untuk selesaikan program artinya tidak di lanjut ke fungsi selanjutnya dalam arti mudah bahwa break adalah memberhentikan pada suatu kondisi misalnya if ataupun for ;
+continue digunakan melanjutkan dengan men skip suatu kondisi baik loop ataupun fungsi lainnya sperti if ataupun for.
+
+jika i ++ di taruh ssetelah kondisi yang membuat dia berhenti maka fungsi akan berhenti pada kondisi if ;
+jika idtaruh diatas maka akan melajutkan program tetapi men skip suatu syaratnya.
+hati hati continue didalam while
+// dasar -22 end //
+
+// dasar -23 starts //
+latihan deret fibonacci
+menggunakan do while loop bisa
+menggunakan for juga bisa
+inisialisasi dari belakang .
+ikutil flow dari rumus fn
+// dasar -23 ends //
+
