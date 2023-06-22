@@ -199,29 +199,29 @@ decrement
 a--
 --a
 penjelasan mengenai decrement kebalikan dari incrment
-// dasar -19 ends //
+// dasar -18 ends //
 
-// dasar -20 stars //
+// dasar -19 stars //
 while (syarat){aksi/syntax}
 syarat dalam bentuk yes atau no dalam bentuk boolean
 akan selalu looping apabila syarat selalu true(yes). maka perlu adanya batasan untuk membatasi loopingnya (no)
 ada kemingkinan apabila syarat tidak terpenuhi maka tidak ada aksi yang dilakukan.
-// dasar -20 ends //
+// dasar -19 ends //
 
-// dasar -21 starts //
+// dasar -20 starts //
 do while loop
 do {aksi} while (syarat);
 cara eksekusinya melakukan aksi akan dilakukan minimal 1 kali dulu baru di cek syaratnya
 kesimpulannya:
 bahwa do while apabila syaratnya sudah terpenuhi maka looping terus apabila syaratnya tidak terpenuhi maka tetep ngeprint yang di aksikan sebelumnya pada while minimal 1 kali.
-// dasar -21 ends //
-
-// dasar -22 starts //
-for loop 
-for (inisialisasi; loop kondisi; increment) {aksinya}
-// dasr -22 ends //
+// dasar -20 ends //
 
 // dasar -21 starts //
+for loop 
+for (inisialisasi; loop kondisi; increment) {aksinya}
+// dasr -21 ends //
+
+// dasar -22 starts //
 break and continue 
 break digunakan untuk selesaikan program artinya tidak di lanjut ke fungsi selanjutnya dalam arti mudah bahwa break adalah memberhentikan pada suatu kondisi misalnya if ataupun for ;
 continue digunakan melanjutkan dengan men skip suatu kondisi baik loop ataupun fungsi lainnya sperti if ataupun for.
@@ -238,4 +238,12 @@ menggunakan for juga bisa
 inisialisasi dari belakang .
 ikutil flow dari rumus fn
 // dasar -23 ends //
+
+// dasar -24 stars //
+latihan membuat segitiga siku-siku
+// dasar -24 ends //
+
+// dasar -25 starts //
+latihan membuat segitiga sama kaki
+// dsar -25 ends // 
 
