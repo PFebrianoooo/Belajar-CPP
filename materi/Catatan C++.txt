@@ -247,3 +247,57 @@ latihan membuat segitiga siku-siku
 latihan membuat segitiga sama kaki
 // dsar -25 ends // 
 
+// dasar -26 starts //
+fungsi/fungction/method
+y        =      f(x)       =         x+5
+input          fungsi               output
+dry = dont repeaet yourself 
+jangan terus mengullang sesuatu yang sama terus menerus
+standard liblary 
+iostream 
+*mendisplay input output dan tampilakan
+cmath
+*standard liblary untuk operas matematika sin cos tan tangen
+
+#include <cmath>
+standard  liblarynya
+
+ceil(x) = pembulatan kedatas
+cos (x) = cos x
+exp (x) = exponen
+fabs (x) = nilai absolut dalam float
+floor (x) = pembulatan keatas
+fmod (x) = modulus dalam float
+log (x) = logaritma dengan basisi natural
+log10 (x) = logaritma dengan basis 10
+pow (x,y) = x panggkat y
+sin (x) = sinus
+sqrt (x) = akar kuadrat
+tan (x)  = tangen
+
+// dasar -26 ends //
+
+// dasar -27 starts //
+menggunakan standar liblary 
+#include <cstdlib>
+pemanggilan di syntax rand()
+*menghasilkan apapun yang random sesuai permintaan user 
+
+bisa digunakan untuk pembuatan menu  yes atau no questtions
+// dasar -27 ends //
+
+// dasar -28 starts //
+fungsi dengan pengenbalian
+
+tipedata nama_fungsi (input) {
+perhitungan;
+statment;
+
+return hasil;
+}
+
+untuk hasil perhitungan/body dikembalikan ke tipe data menggunakan return hasil; 
+
+dapat digunakkan kembali tanpa menulis fungsi lagi didlama statment 
+
+// dasar -28 ends //
