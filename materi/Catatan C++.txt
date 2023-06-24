@@ -297,7 +297,25 @@ return hasil;
 }
 
 untuk hasil perhitungan/body dikembalikan ke tipe data menggunakan return hasil; 
-
-dapat digunakkan kembali tanpa menulis fungsi lagi didlama statment 
+fungsi pengembalian disebut juga dengan reporter
+dapat digunakkan kembali tanpa menulis fungsi lagi didalam statment 
 
 // dasar -28 ends //
+
+// dasar -29 starts //
+void 
+fungsi tanpa pengembalian
+
+void adalah suatu tipe data yang artinya ksosong
+void disebut juga dnegan worker
+
+penulisan:
+void nama_fungsi (input){
+
+}
+
+// dasar -29 ends //
+
+// dasar -30 starts //
+latihan mencari luas dn keliling persegi panjanga denngan void da fungsi pengembalian
+// dasar -30 ends //
