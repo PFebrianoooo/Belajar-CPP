@@ -319,3 +319,88 @@ void nama_fungsi (input){
 // dasar -30 starts //
 latihan mencari luas dn keliling persegi panjanga denngan void da fungsi pengembalian
 // dasar -30 ends //
+
+// dasar -31 starts //
+prototype fungsi
+
+pendeklararaisan diatas line main untuk mendeklarsikan diatasnya sedangkan untuk penjabarannya ada di bawahnya 
+cara pendeklariasian dengan mengambil header fungsinya saja
+
+dapat digunakan pada program multifile
+// dasar -32 ends //
+
+// dasar -33 starts //
+scope variable (global , lokal dan block)
+
+variable global
+variable yang dapat berlaku untuk setiap fungsi atau statement yang ditulis setelah line variable global
+
+variable lokal
+variable lokal adalah variable yang berlaku hanya pada saat didalam fungsi atau statement, variable yang tidak akan menggangu variable globalnya
+
+variable block 
+variable yang ada didalam pada fungsi didalam fungsi.
+
+cout << "memanggil variable terjauh atau global " << ::x << endl;
+// dasar -33 ends //
+
+// dasar -34 starts //
+default argument pada fungsi
+
+default argument adalah nilai standar pada fungsi pendefinisian argumen default di taruh pada default argumrnt pada prototype fungsi dan default argument mengisi argument pada setiap input pada argument. dapat diisi semua inputnya
+// dasar -34 ends //
+
+// dasar -35 starts //
+overloading sebuah fungsi
+// basic function
+statment utama
+
+// overloading function
+statement pembantu
+
+menimpa sebuah fungsi pada fungsi yang sudah ada untuk si input dapat memilih mana yang cocok untuk si inputannya
+
+// dasar -35 ends //
+
+// dasar -36 starts //
+fungsi rekursif
+berasal dari bahasa inggris recurtion yang berarti pengulangan
+dalam artian rekursif berarti yang dapat memanggil dirinya sendiri
+
+finit rekursif
+finit rekursif adalah rekursif terbatas maksudnya adalah main nya akan sampai di akhir atau terbatas
+ 
+untuk pembatasannya dan rekaursifnya menggunakan if dan else
+
+rekursif harus ada batasnya/terminasi , apabila tidak ada batasnya/terminasinya maka recursive nya tidak terbatas endingnya error.  
+
+// dasar -36 ends //
+
+// dasar -37 starts //
+latihan fungsi rekursif 
+untuk penggunaan fungsi rekursif pada fibonacci tidak diasarankan karena pada fungsi dapat bercabang pada fungsi rekursifnya
+dan apabila dipanggil nilai deret yang banyak akan membutuhkan waktu yang lama untuk mendapatkan hasilnya
+
+iterasi: di hitung pada saat itu juga menggunakan rumus.
+// dasar -37 ends //
+
+// dasar -38 starts //
+pointer
+pointer adalah memory dimana apabila kita menddeklarasikan sesuatu minalnya int a = 5 maka si a nya punya alamat memorynya sendiri dan untuk memanggilnya kita perlu mengakses memory a nya dilakukan oleh sistem.
+
+cara mengetahui adress dari nilai atau sesuatu pointernya/memorynya '&'
+
+cara deklarasi atau membuat nama alias untuk alokasi memory pada pointer
+int a*nama_adress = &a
+
+kenapa tipedata nya integer? karena alokasi memory pada int yaity 4 byte
+
+defrencing adalah mengambil niali dari pointer
+
+pointer dapat bekerja dengan maksimal dengan digabungkan oleh fungsi
+// dasar -38 ends //
+
+// dasar -39 starts //
+reference 
+
+// dasar -39 ends // 
