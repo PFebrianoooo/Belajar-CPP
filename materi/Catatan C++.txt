@@ -7,7 +7,7 @@ dinamakan include berfungsi untuk mengcopy semua yang ada di file dan langsung d
 dimana iostream berisi input output dimana akan di alirkan dan di tampilkan pada cmd
 
 yang tidak akan di eksekusi 
-1. line kosong
+1. line kosongdev
 2. komentar (//)
 3. multi line comment (/* ........ */)
 
@@ -403,4 +403,72 @@ pointer dapat bekerja dengan maksimal dengan digabungkan oleh fungsi
 // dasar -39 starts //
 reference 
 
+reference adalah nama alias atau nama lain untuk sebyah vaariabel yang sudah ada 
+
+tata cara penulisan 
+
+tipe data &variable = variable yang ingin di referencekan
 // dasar -39 ends // 
+
+// dasar -40 starts //
+fungsi dengan pointer
+3 fungsi dengan pointer
+1. fungsi yang memasukkan nilai ke dalamnya
+2. fungsi yang memasukan pointer ke dalamnya 
+3. fungsi yang memasukkan reference ke dalamnya
+
+pada saat memeanggil fungsi yang digunakan adalah adressnya dengan (&)
+// dasar -40 ends //
+
+// dasar -41 starts //
+fungsi dengan reference
+
+perbedaanya adalah pada saat input pada fungsi yaitu menggunakan & saja dan pada prototype juga tidak menampilkan variable setelah & 
+
+lebih mudah menggunakan reference dnegan fungsi keitmbang menggunakan fungsi dengan pointer.
+// dasar -41 ends //
+
+// dasar -42 starts //
+array pendaluan
+array adalah kunpulan data yang dimulai dari index 0 s/d yang diinginkan
+
+adress array berurutan
+
+misalkan diinginkan 5 buah member array maka :
+array [4] = {isinya array tsb}
+
+sizeof 
+mengetahui nilai dari sesuatu size of berasal dari standard liblary dari iostream
+
+kekurangan array pada c++
+
+tidak bisa membaca nilai - nilai umum pada pemerograman lain
+1. misalkan pada member array
+2. tidak bisa mengurutkan secara langsung
+3. menentukan nilali maks dan min
+
+makanya ada algoritma untuk menurutkan array menentukan nilai min maks dan lain lain
+// dasar -42 ends //
+
+// dasar -43 starts //
+array standard liblary
+#include <array>
+
+tata cara penulisan array dengan standard liblary
+array < tipedata , jumlah array > nama array
+
+array sangat berteman dengan looping
+
+standard liblary array
+size() = menentukan ukkuran daripada array
+begin() = menentukan nilai awal dari array
+end() = menetukan nilai akhir dari array
+at (?) = menetukan isi array posisi keberapa 
+
+namun penggunaan standad liblary ini tidak bisa dipakai untuk devc++ standard harus menggunakan visual studo code ide atau code blocks
+
+// dasar -43 ends //
+
+// dasar -44 starts //
+
+// dasar -44 ends //
