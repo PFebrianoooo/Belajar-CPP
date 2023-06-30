@@ -455,7 +455,7 @@ array standard liblary
 #include <array>
 
 tata cara penulisan array dengan standard liblary
-array < tipedata , jumlah array > nama array
+array < tipedata , jumlah array > nama array = {isi arraynya, isi arraynya, ...}
 
 array sangat berteman dengan looping
 
@@ -466,9 +466,52 @@ end() = menetukan nilai akhir dari array
 at (?) = menetukan isi array posisi keberapa 
 
 namun penggunaan standad liblary ini tidak bisa dipakai untuk devc++ standard harus menggunakan visual studo code ide atau code blocks
-
 // dasar -43 ends //
 
 // dasar -44 starts //
-
+latihan array 
+diberikan latihan array untuk menetukan sebaran nilai dan grafik setiap nilai yang diberikan
+perlu mengulang vide0 sampai 4-5 kali untuk faham dengan konsep daripada latihan.
 // dasar -44 ends //
+
+// dasar -45 starts //
+looping array
+pada array standar bawaan cpp, bukan berasal dari array bukan dari standard liblary kita tidak tahu batas akhirnya berapa dan itu sebuah masalah
+
+tata cara penulisan
+for (deklarasi variableBaru ; array){ statement nya }
+
+ex : int array [10] = {1,2,3,4,5,6,7,8,9,10}
+
+for ( int nilai : arraynya ){
+cout << nilai << endl;
+}
+
+lebih fleksibel dan lebih mudah ketimbang menggunakan array standard liblary
+apabila ditambahkan variable baru maka tidak berpengaruh dan akan selalu menujuk ke array utama (tidak merubah apapun)
+
+pada looping array ini dapat digunakan untuk looping array tipe standard liblary dan juga digunakan pada standard bawaan array pada c++
+
+untuk merubah array 
+tata cara penulisan
+
+for (int &variableBaru : arraynya) { 
+variable baru ? (mau di opeasikan apa ?);
+cout << .... << .... << variableBaru << endl;
+
+untuk operasi selajutnya maka nilai array akan mengacu pada operand atau statment sebelumnya
+// dasar -45 ends //
+
+// dasar - 46 starts //
+multidimensional array
+
+tata cara penulisan
+manual
+
+int namaArray [baris] [kolom] = {isinya
+
+standard liblary
+
+array <tipeData , jumlah
+// dasar -46 ends //
+
