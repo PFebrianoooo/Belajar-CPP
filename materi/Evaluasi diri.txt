@@ -1,0 +1,3 @@
+Evaluasi diri
+
+1. bagaimana cara sorting dan search array dimensi 1 dan 2 menggunakan data dinamis (done)

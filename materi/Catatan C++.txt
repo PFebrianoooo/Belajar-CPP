@@ -503,15 +503,43 @@ untuk operasi selajutnya maka nilai array akan mengacu pada operand atau statmen
 // dasar -45 ends //
 
 // dasar - 46 starts //
-multidimensional array
+multidimensional array build in
 
 tata cara penulisan
 manual
 
-int namaArray [baris] [kolom] = {isinya
+int namaArray [baris] [kolom] = {isinya , isinya , isiny , ...}
 
-standard liblary
-
-array <tipeData , jumlah
+penngunaan variable baru di array yang mendefinisikan baris dan kolomnya harus konstan ddengan menggunkan variable const
 // dasar -46 ends //
+
+// dasar -47 starts //
+array multidimensi dengan standard liblary
+tata cara penulisan 
+
+array < array <tipeData , kolom > , baris > namaarray = {isinya , ...}
+
+pada print array multidimensi dengan standard liblary perlu lebih teliti agak tricky sedikit
+
+const : berarti kosntan tidak akan berubah rubah 
+
+const tipeData NamaVariable = isinya ;
+const int nilai = 20;
+const int baris = 10 ;
+
+void pada array multi dimensi
+void namaVaiabel (isinya dari array yang dideklarasi pada main >variableBaru)
+// dasar -47 ends //
+
+// dasar -48 starts //
+sorting array
+standard liblary array 
+#include <array>
+
+
+sudah termasuk algortima algoritma untuk mensorting array , search array, dan masih banyak lagi
+// dasar -48 ends //
+
+// dasar -49 starts //
+// dasar -49 ends // 
 
