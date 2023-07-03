@@ -15,7 +15,7 @@ bool isFull(){
 
 bool isEmpty(){
 	if(front > rear){
-		return true;	
+		return true;
 	} else {
 		return false;
 	}
@@ -57,13 +57,13 @@ void dequeue(){
 
 int main(){
 	int pil;
-		
+
 	queue:
 		system("cls");
 		view();
 		cout << "Menu Utama\n1. Enqueue\n2. Dequeue\n3. Keluar\nPilihan: ";
 		cin >> pil;
-	
+
 	if(pil == 1){
 		system("cls");
 		cout << "Enqueue" << endl;
@@ -82,6 +82,6 @@ int main(){
 		system("pause");
 		goto queue;
 	}
-	
+
 	return 0;
 }

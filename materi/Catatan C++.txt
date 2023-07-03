@@ -534,12 +534,68 @@ void namaVaiabel (isinya dari array yang dideklarasi pada main >variableBaru)
 // dasar -48 starts //
 sorting array
 standard liblary array 
-#include <array>
+#include <algorithm>
 
-
-sudah termasuk algortima algoritma untuk mensorting array , search array, dan masih banyak lagi
+standard liblary untuk algoritma dimana mencakup sorting array, search array dan masih banyak lagii 
 // dasar -48 ends //
 
 // dasar -49 starts //
+search array
+standard liblary daripada
+#include <algorithm>
+
+2 step untuk search array
+1. sort data dulu
+2. binary search
+
 // dasar -49 ends // 
 
+// dasar -50 starts //
+introduce string
+
+masih ada hubungannya dengan array
+string adalah kumpulan character
+standard liblary
+
+#include <string>
+
+string adalah sebuah char array dimana bisa dirubah datanya tanpa harus membuatnya seperti ini
+
+int data;
+cout << "masukkan kata" ; cin >> data;
+
+cout << "kata yang anda masukkan adalah : " << data ;
+
+menapilkan hasiil inputan anda
+
+// dasar -50 ends //
+
+// dasar -51 starts //
+operasi pada string
+1. mengambil karakter pad indeks
+2. merubah kata 
+3. menyambung kata
+4. menempelkan kata
+
+append berfungsi untuk menempelkan atau menambahkan kata pada variable tertentu yang dimau
+
+cara penulisan
+
+kata2.append(kata3)
+
+// dasar -51 ends //
+
+// dasar -52 starts //
+komparasi atau perbandingan string
+
+untuk komparasi string merupakan salah satu yang powerful untuk membandingkan kata atau kalimat dikarenakan string dapat membaca mulai dari kalimat yang sangat detail sekalipun
+
+
+baik untuk mengolah kata-kata dan nama tetapi hanya bisa membaca 1 kata saja 
+// dasar -52 ends //
+
+// dasar -53 starts //
+akses substring 
+
+
+// dasar -53 ends //

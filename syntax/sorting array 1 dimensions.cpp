@@ -1,6 +1,6 @@
 #include <iostream>
 #include <algorithm>
-#include <cmath>
+#define penuh 10
 
 using namespace std;
 
@@ -8,7 +8,7 @@ main (){
 
     int n ;
 cout << "masukkan jumlah data : " ; cin >> n ;
-float data [20];
+float data [penuh];
 float total;
 cout << endl;
 
@@ -37,7 +37,9 @@ sort (data ,data+n);
 for (int i = 1 ; i <= n ; i ++){
     cout << data[i] << " " ;
 }
-cout << " ]";
+cout << "]";
+
+
 cout << endl;
 cout << endl;
 float rerata = total / n ;
