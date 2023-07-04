@@ -2,9 +2,9 @@ Evaluasi diri
 
 1. bagaimana cara sorting dan search array dimensi 1 dan 2 menggunakan data dinamis (done)
 
-2. struct and pointer
+2. struct and pointer 
 
-3. linked list
+3. linked list (struct material)
 
 4. queue 
 

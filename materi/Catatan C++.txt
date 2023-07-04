@@ -597,5 +597,116 @@ baik untuk mengolah kata-kata dan nama tetapi hanya bisa membaca 1 kata saja
 // dasar -53 starts //
 akses substring 
 
+bagaimana mengakses substing komponen string dan mencari posisinya dimana
 
+caranya :
+kalimat ("budi makan anduk")
+
+// misalkan untuk mengambil kata makan
+cout << variable.substr(6 , 5)
+
+maka hasil outputnya adalah : makan21:34 
+
+// mencari indeks dari substring
+substr(indeks , panjang)
+
+// untuk mencari posisi substring dari depan
+find("pencarian kata")
+
+// untuk mencari posisi substring dar belakang
+rfind("pencarian kata")
+
+iterasi adalah perulangan 
 // dasar -53 ends //
+
+// dasar -54 starts //
+substitusi string
+
+swap string 
+dimana menggati string dengan string tujuannya bahsa mudahnya mengganti string dengan string yang lain.
+
+swap(kalimat yang ingin diganti)
+
+syntax 
+kalimat_1.swap(kalimat_2)
+
+kalimat 1 akan diganti dengan kalimat 2 dan kalimat 2 akan diganti dengan kalimat 1
+
+replace string
+dimana mengganti string dengan padanan kata yang baru sesuai permintaan atau mau dari pada user yang diinputkan indeks panjang dan padanan kata yang diagnti 
+
+replace(indeks, panjang , "kata yang mau diganti")
+
+kalimat_1.replace(indeks , panjang , "wakanda");
+cout << kalimat_1 << endl;
+
+kalau mau mudah menggunakan find and replace
+
+insert string
+memasukkan string pada suatu indeks didepannya
+
+insert(indeks , "kata ditambahkan")
+
+// dasar -54 ends //
+
+// dasar -55 starts // 
+get line character
+
+getline(cin , variable)
+
+fungsi untuk menginputkan karakter kedalam variable untuk digunakan sebagaimana mestinya
+
+dengan fungsi ini kita dapat untuk mengoperasikan char inputan sesuai yang kita mau untuk di operasikan
+
+1. mencari jumlah kata
+
+// dasar -55 ends //
+
+// dasar -56 stars //
+struct
+
+struct adalalh data yang dibentuk oleh beberapa data , yang meililki komponen sub data pada isinya dari si struct tersebut
+
+kegunaan dari struct
+1. merangkap class dari banyak tipe data
+
+// dasar -56 ends //
+
+// dasar -57 starts //
+nesting struct
+
+nesting struct adalah pada struct didalamnya terdapat struct lagi di dalamnya
+
+caranya :
+
+struct film {
+	string judul;
+	int tahun;
+	int pendapatan
+	aktor pemeran_1;
+	aktor pemeran_2;
+};
+
+struct aktor {
+	string nama;
+	int tahun_lahir;
+};
+
+maka dalam output keluarannya terdapat
+judul film = ....
+tahun = ....
+pendapatan = .....
+pemerannya = ....
+tahun lahir pemeran = ....
+
+
+dalam struct dapat menggabungkan tipe data yang macam macam dalam satu kelas yang diberi nama dan merangkap kepada struct
+
+bahasanya dari nesting struct adalah membuat struct didalam struct
+// dasar -57 ends //
+
+// dasar -58 starts //
+unions
+
+// dasar -58 ends //
+
