@@ -706,7 +706,49 @@ bahasanya dari nesting struct adalah membuat struct didalam struct
 // dasar -57 ends //
 
 // dasar -58 starts //
-unions
+union
+
+union adalah menggabungkan adress semua tipe data yang belum terangkup dalam union dan menggabungkannya dalam stau blok data yang dirankup dalam union
+
+penulisannya: 
+
+union NamaVariabel {
+	int value_int ;
+	char char_value [4];
+}
+
+jadi union adalah tipe data yang didalamnya dynamic artinya bila di deskripsikan diatas integer bisa memiliki nilai int dan juga char ,
+dan char bisa memiliki nilai char dan juga integer . sehungga dinamakan tipe data dinamic atau dimanis.
 
 // dasar -58 ends //
 
+// dasar -59 starts //
+enum
+
+cara paenulisan :
+
+enum variable {range data, range data, range data = 5 , range data ,..}
+
+kemudahan enum adalah kita sudah punya range data yaitu pada didalam enum 
+
+range enum dimulai dari indeks ke - 0 dan apabila di definisikan 5 diatas makan setelahnya 6 , 7 , 8 dan seterusnya
+
+// dasar -59 ends //
+
+// dasar -60 starts //
+ternary operator
+
+merupakan high level operator pada c++
+
+ternary operator adalah menegecek dari kondisi yang dimana apabila benar maka masuk ke hasil 1 atau hasil 2, sama halnya dengan if else statement namun ternary operator lebih singkat penulisannya
+
+yang merupakan ekuivalen dari if else statement
+
+penulisan
+(kondisi) ? hasil1 , hasil2
+
+kondisinya harus dalam bentuk logika true and false 
+
+jika kondisi benar maka masuk kepada hasil 1 dan apabila salah maka masuk kedalam hasil 2
+
+// dasar -60 ends //
