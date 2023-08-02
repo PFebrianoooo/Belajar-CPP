@@ -1,6 +1,5 @@
 #include <iostream>
 #include <algorithm>
-#define penuh 10
 
 using namespace std;
 
@@ -8,7 +7,7 @@ main (){
 
     int n ;
 cout << "masukkan jumlah data : " ; cin >> n ;
-float data [penuh];
+int data [n];
 float total;
 cout << endl;
 
@@ -25,15 +24,15 @@ for (int i = 1 ; i <= n ; i ++){
     cout << data [i] << " ";
     total += data [i];
 }
-cout << " ]";
+cout << "]";
 
 cout << endl;
 cout << endl;
-cout << "data trurut :" << endl;
+cout << "data terurut :" << endl;
 cout << "-------------" ;
 cout << endl;
 cout << "[ ";
-sort (data ,data+n);
+sort (data ,data + n);
 for (int i = 1 ; i <= n ; i ++){
     cout << data[i] << " " ;
 }

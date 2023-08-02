@@ -737,7 +737,6 @@ range enum dimulai dari indeks ke - 0 dan apabila di definisikan 5 diatas makan 
 
 // dasar -60 starts //
 ternary operator
-
 merupakan high level operator pada c++
 
 ternary operator adalah menegecek dari kondisi yang dimana apabila benar maka masuk ke hasil 1 atau hasil 2, sama halnya dengan if else statement namun ternary operator lebih singkat penulisannya
@@ -752,3 +751,156 @@ kondisinya harus dalam bentuk logika true and false
 jika kondisi benar maka masuk kepada hasil 1 dan apabila salah maka masuk kedalam hasil 2
 
 // dasar -60 ends //
+
+// dasar -61 starts //
+comma operator 
+comma separator dipakai pada saat pendefisian daripada variable,fungsi inputan dan isi dalam array.
+misalkan : 
+
+int a,b,c,d,dst.
+float a,b,c,d,e.dst.
+void tampil (int a, int b, int c,)
+int a [5] = {1,2,3,4,5}
+
+contoh diatas merupakan penerapan COMMA BIASA.
+
+comma operator 
+
+cara penulisan syntax.
+
+(expression1 , expression2);
+
+perbedaan comma operator dan operator biasa dalah terdapat pada penulisannya dimana comma operator menggunakan expressi dalam penulisannya dan menggunkan kurung dan comma biasa menggunakan comma hanya sebagai tanda dan saja dan tidak di dalam kurungkan.
+
+// dasar -61 ends //
+
+// dasar -62 starts //
+Bitwise Operator
+
+operator yang digunakan untuk menerjemahkan kedalam bit bit dimana Bitwise Operator menggunakan standard liblary 
+#include <bitset>
+
+<< operator bitwise standard <<
+& and bitwise and
+| or bitwise includeive or
+^ xor bitwise exclusive or
+~ not 
+<< SHL shift bits left
+>> SHR shift bits right
+
+unsigned digunakan untuk menyatakan tidak ada plus dan minus diambil positif nya saja
+
+cara menampilkan : 
+
+cout << bitset<jumlah bit yang dimau (angka)>(NamaVariableYangDIinginkan)  << endl;
+
+perhitungan manual
+0000101
+
+0000101 dhitungnya dari kanan 6543210 lalu yang expressiny true dihitung
+
+2^0 + 2^2 = 1 + 4 = 5 
+
+hasilnya sesuai dengan pendeklarasian tipe data short diawal
+
+// dasar -62 ends //
+
+// dasar -63 starts //
+casting operator
+impilsit dan explisit casting
+implisit casting adalah cara penulisan operator casting dimana dilakukan id belakang layar 
+explisit casting adalah cara penulisan operator casting dimana dilakukan di depan layar dalam artian dijabarkan
+
+penulisan dengan mudahnya 
+cout << (tipe data yang diinginkan) variable << endl;
+
+// dasar -63 ends //
+
+// dasar -64 starts //
+ofstreams
+menulis file ke external digunakan untuk menyimpan , mengedit menulis dan menghapus file pada external data. semua itu kita taruh pada database yang sebenarnya data text dan harus membuat program yang dapat menyimpan data text nyaitu offstream.
+
+offstream digunakan untuk menulis file external pada file external yang digunakan untuk CRUD.
+
+menggunakan #include <fstream> dibagi menjadi 3 yaitu : 
+1. ofstream
+	menulis pada file external atau alokasi memori 	yang kita sengaja membuatnya
+2. ifstream
+	membaca file external dimana yang sudah kita 	buat alokasi external sebelumnya pada ofstream 	dan merubahnya sesuai tipe data yang diinginka
+3. fstream
+
+ofstream myFIle;
+basic ofstream std liblary disertai dengan nama file;
+
+antara ios::out dan ios::trunc sama saja dimana ios out mengoutputkan data sedangkan ios::trunc membuatkan data dan menulisakn data.
+
+intinya ofstream adalah cara untuk menuliskan file yang diawali open and close.
+
+ios::app; append bukan aplication
+ios::trunc;
+ios::out;
+
+append menggabungkan khususnya pada string
+
+antara ios::out dan ios::trunc adalah sama dimana dapat menuliskan file dan juga dapan membuatkna file.
+
+tulisan akan bertambah seiring dengan console yang di run jadi akan menyimpan data yang sebelumnya sudah di run.
+
+jadi apabila ios::trunc dan ios::out akan meng Overwrite tulisan sebelumnya
+
+untuk ios::app akan menambakan apapun di line berikutnya tanpa meng overwrite tulisan yang lama.
+
+PROBLEM.
+bagaimana mengubah data berupa string dalam data1.txt menjadi data yang dapat keluar pada console.
+
+// dasar -64 ends //
+
+// dasar -65 starts //
+ifstream
+#include <fstream>
+
+ifstream adalah membaca file external untuk di tamoilkan kepada console atau dipergunaka untuk pengoperasioan sebelumnya.
+
+ifstream dibagi menjadi 3 :
+1. ios::in = default
+2. ios::ate = memulai dari akhir file 
+3. ios::binary = membaca file biner
+
+mudah saja sebetulnya kita harus teloiti dan mngerti bentuk file yang sudah dubuat pada data1.txt apakah menggunakan string int ataupun menggunakan float hanya harus bener bener mengerti tentang bentukan file yang sudah dibuat. 
+
+// dasar -65 ends //
+
+// dasar -66 starts //
+menulis data menjadi bentuk biner atau hexadesimal
+
+dengan menggunakan standard liblary ios::binary. dimana ios Binary berfungsi sebagai standard liblary yang digunakan untuk mengubah kedalam bentuk biner atau hexadesimal.
+
+bahasa mudahnya menulis kedalam bahasa biner
+
+merubahnya dengan menggunkan method write
+mengubah kedalam character berpoointer => menubah kedalam bentuk binary.
+
+syntaxnnya :
+
+myFile.write(reinterpet_cast<char*>(&TipeDataObject),sizeof(TipeDataObject));
+
+dan keluar hasil berupa data binary nya dalam bentuk (namafile.bin).
+
+// dasar -66 ends //
+
+// dasar -67 starts //
+membaca file biner dan meulis kedalam console
+
+syntax
+myFile.read(reinterpret_cast<char*> (&TipeDataObject), sizeof(TipeDataObject));
+
+hanya perbedaanya terletak pada stelah kata myFile dimana stelah itu ditulis read untuk membaca dan write untuk menulis data 
+
+untuk sesi 66 dan 67 hanya berupa data integer 
+// dasar -67 ends //
+
+// dasar -68 starts //
+
+
+
+// dasar -68 ends //

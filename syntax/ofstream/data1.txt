@@ -1,0 +1,3 @@
+ini adalah penulisan pada data ke-1
+13579
+3.14
