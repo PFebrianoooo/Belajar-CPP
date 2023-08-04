@@ -900,7 +900,36 @@ untuk sesi 66 dan 67 hanya berupa data integer
 // dasar -67 ends //
 
 // dasar -68 starts //
+latihan binary file 
 
+pertama tama kita membuat file diimana berfungsi untuk menulis file kedalam bentuk biner dan membuat satu file lagi yang berfungsi untuk membaca file dalam biner dan dituliskan kedalaman console.
 
+seekposition artinya kita mau lonact ke bait sekian seekp;
+seekg untuk menulis data by id;
 
 // dasar -68 ends //
+
+// dasar -69 starts //
+project CRUD bagian pertama.
+
+Contoh Menu Yang akan dibuat.
+
+progarm CRUD data mahasiswa 
+===========================
+1. Tambah Data Mahasiswa.
+2. Tampilkan Data Mahasiswa.
+3. Ubah Data Mahasiswa.
+4. Hapus Data Mahasiswa.
+5. exit
+===========================
+
+Pilih Menu anda : 
+
+membuat menu dengan fungsi pengembalian, while , enum ,switch case , if else , goto , dan sistem cls atau clear screen.
+
+// dasar -69 ends //
+
+// dasar -70 starts //
+sampai pada menit ke 17 :: 0
+ 
+// dasar -70 ends //
