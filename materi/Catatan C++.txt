@@ -930,6 +930,9 @@ membuat menu dengan fungsi pengembalian, while , enum ,switch case , if else , g
 // dasar -69 ends //
 
 // dasar -70 starts //
-sampai pada menit ke 17 :: 0
- 
+cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+digunakan untuk mengabaikan spasi dan merubah spasi kebawah untuk fungsi getline.
+
+permasalahan hanya pada cin ignore dimana pada system codeblocks tidak support dengan cin ignorenya haus merubah dengan aplikasi source code lainnya. for example vidual studio code ide.
 // dasar -70 ends //
