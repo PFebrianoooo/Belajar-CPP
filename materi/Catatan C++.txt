@@ -930,9 +930,122 @@ membuat menu dengan fungsi pengembalian, while , enum ,switch case , if else , g
 // dasar -69 ends //
 
 // dasar -70 starts //
+Menambahkan bagian create dan read 
 cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
 digunakan untuk mengabaikan spasi dan merubah spasi kebawah untuk fungsi getline.
 
 permasalahan hanya pada cin ignore dimana pada system codeblocks tidak support dengan cin ignorenya haus merubah dengan aplikasi source code lainnya. for example vidual studio code ide.
 // dasar -70 ends //
+
+// dasar -71 starts //
+Menambahkan update dan delete
+
+project sederahana program CRUD sudah selesai saat ini.
+
+// dasar -71 ends //
+
+// dasar -72 starts //
+prepocessing directive
+
+prepocessing directive dilambnagkan dengan lambang pagar yang artinya mengambbil semua file yang dilambangkan dengan lambang pagar di tahap preprocessing sebelum masuk kepada tahap dari compiler.
+
+dengan kata lain mengambil semua file yang di include kan.
+
+semua hal yang ada hash nya atau pagarnya merupakan prepocessing directive. dimana tidak menggunkan adress memory pada saat meng-compile. apabila di definisikan secara main ada adressnya karea menggunakan alokasi memory. sedangkan apabila ditulis dengan menggunakan preprocesing directive tidak menggunakan alokasi memory.
+
+
+init
+
+#include <iostream>
+#define phi = 3.14
+
+
+// dasar -72 ends //
+
+// dasar -73 starts //
+pokoknya yang berlambang hash adalah preprocesing directive
+
+macam-macam preprocesing directive
+1. maacro
+2. define
+3. undef
+
+bukan hanya bisa ditulis di dalam header saja melainkan bisa ditulis di mana saja untuk define dan undef.
+
+// dasar -73 ends //
+
+// dasar -74 starts //
+if else statement menggunakan macro define dengan preprocessing directive
+
+init
+
+#define ID 1
+
+#if ID ==1
+    #define LANG "indonesia"
+#else
+    #define LANG "english"
+#endif
+
+// dasar -74 ends //
+
+// dasar -75 starts //
+menggunakan header ekstrenal dimana bisa memuat rumus rumus untuk segera di copy kan ke preprocessing 
+tidak menggunakan spasi pada saat men define kan setelah variabel define
+
+bisa berupa if else statement dan standard liblary lainnya bisa membuat source code main jadi jauh lebih simple dan ringkas clean look
+ 
+// dasar -75 ends //
+
+// dasar -76 starts //
+preprocesing directive ifdef, ifndef, pragma
+
+1. ifdef digunakan untuk mengecek apakah sudah di definisikan sebelumnya atau belum
+
+2. ifndef digunakan untuk mengecek apabila sudah di definisikan dan apabila sudah di definisikan maka tidak di eksekusi. apabila tidak di definisikan maka akan di definisikan langsung.
+dinamakan preprocessing directive guarding
+
+untuk prepocessing directive guarding biasanya diawal dengan underscore
+
+initialisation
+
+#ifndef _LVMM_IOSTREAM
+#deifne _LVMM_IOSTREAM
+
+// ISINYA YANG MAU HANYA DI INCLUDE KAN 1 KALI SAJA
+// KALO UDAH DI INCLUDE 1 KALI MAKA DI INCLUDE LAGI PUN SUDAH TIDAK DIANGGAP ATAU DI EKSEKUSI
+
+#endif // _LVMM_IOSTREAM
+
+
+3. pragma once untuk memastikan bahwa yang difenisikan hanya di include sebanyak 1 kali saja 
+
+// dasar -76 ends //
+
+// dasar -77 starts //
+namespace
+
+namespace adalah membuat fungsi dan deklarasi yang dibuat dalam scope variable yang kita buat
+namespace scope {
+
+};
+
+
+using namespace scope;
+kalo udah digunakan namespace sperti ini makan tidak perlu namespace didepannya lagi misalkan scope::fungsi();
+hanya fungsinya saja yang dituliskan;
+
+// dasar -77 ends //
+
+// dasar -78 starts //
+latihan crud dengan multifile
+cara linking nya dengan include dimana dimulai dar bawah keatas
+
+// dasar -78 ends //
+
+// dasar -79 starts //
+typedef
+
+
+// dasar -79 ends //
