@@ -54,7 +54,7 @@ void cetak_queue(){
 }
 	
 	
-main () {
+int main () {
 		int pilihan;
 		
 		while (1){

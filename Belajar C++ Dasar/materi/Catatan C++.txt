@@ -1047,5 +1047,104 @@ cara linking nya dengan include dimana dimulai dar bawah keatas
 // dasar -79 starts //
 typedef
 
+typedef adalah nama alias untuk tipe data yang ingi kita rubah namanya menjadi nama yang kita mau
+
+intilaisation
+typedef "type data yang mau di aliaskan" "nama aliasnya"
+
+typedef int I;
+
+
+
+misalkan 
+typedef int I;
+typedef float J;
+typedef string K;
+
+
+I a = 10;
+J b = 3.14;
+K c = "ganteng banget";
+
+singkatnya typed adalah sebuah nama lain atau kata ganti atau alias untuk sebuah tipe data menjadi sebuah variable.
+
+pengunaan typedef
+1. bisa untuk membuat nama alias untuk tipe data yang panjang-panjang
+
+
+adapaun operator lain untuk menyingkat atau membuat nama alias dengan cara using
+
+using d = double;
+
+d i = 3.14231231;
+
 
 // dasar -79 ends //
+
+// dasar -80 starts //
+template fungsi
+
+template fungsi adlaah suatu fungsi yang dapat mencover semua tipe data dalam fungsi tersebut dalam void 
+
+template<typename T>
+void print(T data) {
+cout << data << endl;
+}
+ ket :
+T = adalah nama bebas mau pake apa
+
+gampangnya gini punya fungsi yang dapat do cover semua tipe data nam makenya  template fungsi. satu untuk semua 
+
+*bisa merubah ke tipedata yang dimau*
+
+template<typename T>
+void print(T data) {
+cout << data << endl;
+}
+
+main (){
+	print<int>(10.155);
+	print<int, float> (10, 15,121)
+
+// dasar -80 ends //
+
+// dasar -81 starts //
+auto
+
+auto adalah sebuah fungsi untuk memilih sendiri dia merujuk pada typedata apa 
+
+int a = 10 ;
+float b = 6.231;
+
+auto a = 10;
+auto b = 6.231;
+
+let compiler decide who type it is.
+
+
+#include <typpeinfo>
+liblary baru untuk mementukan dia termasuk kedalam typedata apa
+
+initialisation
+typeid(nama typedatanya).name()
+
+biasanya auto bijaknya pada fungsi yang memerlukan nyari sendiri fungsi apa dia.
+
+template<typename T, typename U>
+auto max(T a , U b){
+    return  (a>b)? a:b;
+}
+
+auto e = max (3.13212, 5);
+
+cout << e << endl;
+
+
+
+// dasar -81 ends //
+
+// dasar -82 starts //
+error handling exeptions
+
+
+// dasar -82 ends //
