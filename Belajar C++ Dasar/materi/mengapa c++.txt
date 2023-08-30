@@ -1,8 +1,0 @@
-roadmap pembelajaran 
-
-c++ > java > javascript > python
-
-mengapa harus c++ 
-untuk menjadi tandem atau pondasi untuk belajar progrsmming language kedepannyya karena python, java, dan javascript memili pola syntax yang hampir sama hanya berbeda pada deklarasi tipe data dan lainnya.
-
-C++ itu penting
