@@ -1,3 +1,80 @@
 // OOP -1 starts //
+Pendahuluan
 
-// OOp -1 ends //
+Object oriented programming
+apa itu object oriented programming ?
+
+object oriented adalah sebuah metode dimana mengelompokan objek kedalam suatu kelas.
+
+dimana object oriented programming berfunhgsi uuntuk membuat program yang lebih kompleks dnegan menggabungkan variable variable fungsi fungsi data data kedalam satu loyang yang disebut dengan kelas.
+
+class Mahasiswa {
+	string Nama;
+	string Nim;
+	string jurusan;
+
+	void RubahNama(){
+	}
+}
+
+jadi intinya object oriented programming adalah sebuah method untuk menggabungkan semua data-data , fungsi-fungsi kedalam suatu tipe yang dinamakan dengan kelas.
+
+apabila di c++ dasar kita menggunakan basic program struktural, sedangkan di OOP kita menggunakan object atau pengelompokan kedalm suatu loyang yang dinamakan dengan class
+
+// OOP -1 ends //
+
+// OOP -2 starts //
+setup windows menggunakan visual studio code
+
+step by step
+1. membuat folder utama dan diisi oleh 2 folder untuk source code dan hasil compilenya.
+2. membuat file bebas namanya dengan extension file .cpp ditaruh di file source code.
+3. setup visual studio code menggunakan c\c++ edit configuration json dengan ctrl+shift+p lalu save
+3. setup visual studio code dengan membuat folder tasks.json di file vs code dan mensetup file mulai dari compile sampai run c++
+4. menulis code di file source code dan click ctrl+shift+p untuk mengcompile file dan mendapatkan hasil berupa file compile nya
+
+setelah mengikuti langkah-langkah harusnya visual studio code sudah bisa di jalankan untuk menulis code c++
+
+// OOP -2 ends //
+
+// OOP -3 starts //
+Pengenalan Kelas Dan Object
+
+init
+class Mahasiswa {
+	public:
+		string nama;      // data member
+		string jurusan;
+		string nilai;
+	private:
+		string ipk;
+		char grade;
+	protected:
+
+}
+
+class adalah loyang atau template dimana dapat menyimpan berupa 
+1. data member
+2. member function
+
+
+pengaksesan kelas / access modifier:
+1. Public
+2. Privat
+3. Protected
+
+
+1. Public 
+dapat diakses oleh siapapun diluar kelas 
+2. privat 
+hanya dapat diakses oleh didalam kelas
+3. protected
+hanya dapat diakses oleh kelas yang meng inherit kelas ini
+
+// OOP -3 ends //
+
+// OOP -4 starts //
+constructor.
+
+fungsi yang pertama kali diakses oleh objek
+// OOP -4 ends //
