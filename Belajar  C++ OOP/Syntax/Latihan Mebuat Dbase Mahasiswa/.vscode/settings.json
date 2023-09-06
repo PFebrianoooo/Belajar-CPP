@@ -1,6 +1,5 @@
 {
   "terminal.integrated.fontSize": 14,
-  "editor.fontSize": 14,
   "files.associations": {
     "iostream": "cpp"
   }

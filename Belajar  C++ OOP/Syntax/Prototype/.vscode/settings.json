@@ -1,0 +1,6 @@
+{
+  "terminal.integrated.fontSize": 13,
+  "files.associations": {
+    "ostream": "cpp"
+  }
+}

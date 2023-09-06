@@ -54,8 +54,8 @@ class Mahasiswa {
 }
 
 class adalah loyang atau template dimana dapat menyimpan berupa 
-1. data member
-2. member function
+1. data member atau attribute atau data
+2. member function atau method atau fungsi
 
 
 pengaksesan kelas / access modifier:
@@ -69,12 +69,128 @@ dapat diakses oleh siapapun diluar kelas
 2. privat 
 hanya dapat diakses oleh didalam kelas
 3. protected
-hanya dapat diakses oleh kelas yang meng inherit kelas ini
+hanya dapat diakses oleh kelas me deirved class ini
 
 // OOP -3 ends //
 
 // OOP -4 starts //
 constructor.
 
-fungsi yang pertama kali diakses oleh objek
+fungsi yang pertama kali diakses oleh objek dan biasanya constructor digunakan untuk menginialisasi sebuha variable public, private dan protected.
+
+initialisation
+
+class Mahasiswa {
+
+public :
+	string Nama;
+	string Nim;
+
+		
+	// constructor
+Mahasiswa (string Nama, string Nim){
+	Mahasiswa::Nama = Nama;
+	Mahasiswa::Nim = Nim;
+
+	cout << Nama << endl;
+	cout << Nim << endl;
+
+
+	}
+
+
+};
+
 // OOP -4 ends //
+
+// OOP -5 starts //
+Member function atau method
+
+member function atau method berisi fungsi-fungsi untuk mengoperasikan objek sesuai yang dimau oleh user. biasanya berisi fungsi-fungsi untuk CRUD pada objek
+
+method dibagi menjadi 4
+1. Tanpa Parameter dan tanpa return.
+2. Dengan parameter tanpa return.
+3. Tanpa parameter dengan return.
+4. dengan parameter dan return
+
+
+> 1. Tanpa Parameter dan tanpa return.
+biasanya hanya mendisplaykan saja 
+
+void TampilData(){
+	cout << Mahasiswa::Nama << endl;
+	cout << Mahasiswa::Nim << endl;
+	cout << Mahasiswa::Jurusan << endl;
+}
+
+> 2. Dengan parameter tanpa return
+void UbahData (const char* Nama, const double Ipk){
+mahasiswa::Nama = Nama;
+Mahasiswa::Ipk = Ipk;
+}
+
+> 3. Tanpa parameter dengan return
+string AmbilNama (){
+return Mahasiswa::nama;
+}
+
+> 4. Dengan Parameter dan return
+biasanya menggunakan operator
+string (const char* &Nlai, const char* Nim){
+return mahasiswa::nim + Nim;
+return Mahasiswa::Nilai + Nlai;
+}
+
+// OOP -5 ends //
+
+// OOP -6 starts //
+latihan membuat Dbase dengan konsep create dan read.
+
+// OOP -6 ends //
+
+// OOP -7 starts //
+berbagai cara menulis class dan alokasi memory
+
+memory pada c++ dibagi menjadi 2 
+1. heap memory
+2. stack memory
+
+1. pada heap memory perlu pointer untuk mengaksesnya
+2. pada stack emory tidak perlu pointer untuk mengaksesnya
+
+4 cara menulis dengan class
+selengkapnya pada syntax
+
+// OOP -7 ends //
+
+// OOP -8 starts //
+Memory dan adress dari object
+
+Memory 
+memory dari sebuah kelas tergantung daripada ukuran dari data membernya atau atribute yang di deklarasikan didalam kelas mengecualikan semua fungsi yang di deklarasikan di bawahnya.
+
+dibagi menjadi 2 
+1. Stack Memory
+2. Heap Memory
+
+1. stack memory
+Apabila di deklarasika 5 tipe data makan penempatan tipe data yang pertama paling bawah sesuai dengan struktur data dan algoritma dengan prinsip LIFO. apabila di deklarasikan fungsi maka mengisi alokasi memory setelahnya dan ssetiap selesai maka meory nya akan di release atau di hapus.
+
+Stack memory itu terbatas
+
+2. Heap Memory
+Heap Memory Atau Disebut dengan free memory.
+
+untuk menulis memory ke heap menggunakan keyword new.
+
+// OOP -8 ends //
+
+// OOP -9 starts //
+Destructor and object
+
+// OOP -9 ends //
+
+// OOP -10 starts //
+Namespace vs this
+// OOP -10 ends //
