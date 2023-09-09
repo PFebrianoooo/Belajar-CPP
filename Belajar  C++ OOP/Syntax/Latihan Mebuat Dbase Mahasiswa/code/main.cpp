@@ -14,10 +14,10 @@ public:
 
     Mahasiswa(string nama, string nim, string tahun, string jurusan)
     {
-        Mahasiswa::Nama = nama;
-        Mahasiswa::Nim = nim;
-        Mahasiswa::Jurusan = jurusan;
-        Mahasiswa::Tahun = tahun;
+        this->Nama = nama;
+        this->Nim = nim;
+        this->Jurusan = jurusan;
+        this->Tahun = tahun;
     }
 
     string Striginify()
@@ -35,19 +35,19 @@ public:
 
     Dbase(const char *FileName)
     {
-        Dbase::Filename = FileName;
+        this->Filename = FileName;
     }
 
     void Save(Mahasiswa data)
     {
-        Dbase::Out.open(Dbase::Filename, ios::app);
-        Dbase::Out << data.Striginify();
-        Dbase::Out.close();
+        this->Out.open(Dbase::Filename, ios::app);
+        this->Out << data.Striginify();
+        this->Out.close();
     }
 
     void ShowAll()
     {
-        Dbase::In.open(Dbase::Filename, ios::in);
+        this->In.open(Dbase::Filename, ios::in);
         string nama, nim, jurusan, tahun;
         int index = 1;
 
@@ -62,10 +62,10 @@ public:
              << "jurusan" << endl;
         while (!Dbase::In.eof())
         {
-            Dbase::In >> nama;
-            Dbase::In >> nim;
-            Dbase::In >> tahun;
-            Dbase::In >> jurusan;
+            this->In >> nama;
+            this->In >> nim;
+            this->In >> tahun;
+            this->In >> jurusan;
 
             cout << index << "."
                  << "\t" << nama << "\t" << nim << "\t" << tahun << "\t" << jurusan << "\t";

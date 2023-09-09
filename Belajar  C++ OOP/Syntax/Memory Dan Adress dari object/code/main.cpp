@@ -46,9 +46,12 @@ int main()
     cout << &a << endl;
     cout << &b << endl;
     cout << &Object1 << endl;
-    cout << &Object2 << endl;
+    cout << &Object2 << " stack Memory" << endl;
+    cout << Object2 << " heap memoru" << endl;
     cout << &c << endl;
     cout << &d << endl;
+
+    // untuk pembuatan object di heap memory dan di stack memory llebih cepat pembuatan di stack memory dibandingkan dnegan di memory heap.
 
     return 0;
 }

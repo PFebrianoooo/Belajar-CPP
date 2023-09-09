@@ -10,7 +10,7 @@ public:
 
     DenganConstructor(const char *data)
     {
-        DenganConstructor::data = data;
+        this->data = data;
     }
 
     void Show()

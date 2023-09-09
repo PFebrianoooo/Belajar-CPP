@@ -101,6 +101,9 @@ Mahasiswa (string Nama, string Nim){
 
 };
 
+constructor biasanya digunakan untuk
+1. tempat inisialisasi data member.
+
 // OOP -4 ends //
 
 // OOP -5 starts //
@@ -187,10 +190,182 @@ untuk menulis memory ke heap menggunakan keyword new.
 // OOP -8 ends //
 
 // OOP -9 starts //
-Destructor and object
+Destructor and object lifetime
+
+destructor adalah saat mwnjalankan fungsi constructor selesai maka menjalankan fungsi destructor untuk menghapus runag di memory agar tidak terjadi memory leak
+
+destructoor adalah sebuah fungsi yang digunakan untuk mengahpus ruang di memory dimanaa dalam peng aksesannya menggunakan pinter secara langsung
+
+intitialisation
+
+~classname(){
+// args
+
+}
+
+contoh kasus
+
+player *Object1;
+Object1 = new player("andi");
+delete Object1;
+
+contoh diatas merupakan cara menghapus alokasi memory dengan menngunakan perintah delete.
 
 // OOP -9 ends //
 
 // OOP -10 starts //
 Namespace vs this
+
+nameespace digunakan untuk pemberian refers kepada prototype fungsi sedangkan this digunakan untuk pemeberian refers kepada kelas.
+
+contoh
+class Mahasiswa {
+	public :
+	string nama;
+	string nim;
+	string nilai;
+
+	Mahasiswa(const char * nama, const char * nim , const char * nilai){
+		this->nama = nama;
+		thid->nim = nim;
+		this->nilai = nilai;
+		
+};
+
+namesapce ruangan {
+	class Mahasiswa 
+	{
+		public :
+		string nilai ;
+		string nim;
+		string nama;
+		
+		Mahasiswa(const char *nilai , const char *nim , const char *nama)
+			{
+			this->nilai = nilai;
+			this->nim = nim;
+			this->nama = nama;
+			}	
+
+		void TampilNama()
+			{
+			cout << this->nim << endl;
+			cout << this->nama << endl;
+			cout << this->nilai << endl;
+			}
+		string GetNama (const char* nama)
+			{
+			return this->nama;
+			}				
+        };
+	
+
+
+};
+
+
+main (){
+
+	
+	Mahasiswa* Object1;
+	Object1 = new Mahasiswa("otong","2204070039","90");
+	cout << Object1->nama << endl;
+	cout << Object1->nim << endl;
+	cout << Object->nilai << endl;
+
+Ruangan::Mahasiswa* Object2;
+	Object2 = new Ruangan::Mahasiswa("otong","2204070039","90");
+	Object->TampilNama();
+}
+
+arrow function digunakan sebagai pengganti :: pada namespace atau object dan this digunakan untuk merefers kelas
+
 // OOP -10 ends //
+
+// OOP -11 starts //
+prototype fungsi.
+
+prototype fungsi adalah penjabaran dari method atau member function dengan menjabarkan isi dari method i bawah atau di file header untuk mempersingkat syntax pada source code main
+
+prototype fungsi di OOP hammpir sama dengan prototype pada C++ Dasar perbedaanya adalah harus me reversing class yang mau di prototype-kan fungsinya.
+
+Contoh Penggunaan 
+
+class Mahasiswa {
+	public :
+	string nama;
+	string nim;
+	string nilai;
+
+	Mahasiswa(const char * nama, const char * nim , const char * nilai){
+		this->nama = nama;
+		thid->nim = nim;
+		this->nilai = nilai;
+
+	void TampilData();
+	string GetNama(const char *nama);
+};
+
+
+// prototype fungsinya
+
+void Mahasiswa::TampilData()
+		{
+		cout << this->nim << endl;
+		cout << this->nama << endl;
+		cout << this->nilai << endl;
+		}
+string Mahasiswa::GetNama(const char * nama)
+		{
+		return this->nama ;
+		}
+
+// OOP -11 ends //
+// OOP -12 starts // 
+multifile programs
+
+sama halnya dengan multifile pada c++ dasar tetapi patut di perhatikan
+1. penulisan include pada file dengan #include "nama header"
+
+2. tasks.json
+hampir sama pada tasks.json sebelummnya tetapi di multifile perlu adanya compile per file apabila file c++ dan meng combine stiap file yang di compile per file dan menggabngkannya
+
+"label" : "compile an every file",
+"type" : "shell",
+"command" : "g++",
+"args" : [
+"-std=c++17",
+"${file}",
+"-c",
+"-o",
+".\\nama file objek\\${fileBasenameNoExtension}.o"
+
+"label" : "combine all file",
+"type" : "shell",
+"command" : "g++",
+"args" : [
+"-std=c++17",
+".\\nama file objeck\*.o",
+"-o",
+".\\nama file objek\\main.exe"
+
+"label" : "compile an every file",
+"type" : "shell",
+"command" : ".\\fileobjek\\main.exe",
+"depends-on" : ["combine all file"]
+"group":[
+"kind" :"build",
+"is-default": true
+]
+
+
+3. penulisan preprocessing directive dengan 
+ifndef __PLAYER
+#define __PLAYER
+endif
+sebagai guard untuk tidak di deefiisikan secara berulang lagi
+
+// OOP -12 Ends //
+
+// OOP -13 starts //
+// OOP -13 ends //

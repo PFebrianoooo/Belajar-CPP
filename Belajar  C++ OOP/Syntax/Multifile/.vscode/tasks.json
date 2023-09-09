@@ -3,21 +3,58 @@
   // for the documentation about the tasks.json format
   "version": "2.0.0",
   "tasks": [
+    // apabila kita ingin mengconpile setiap spesifik file
+    // {
+    //   "label": "compiling an every file",
+    //   "type": "shell",
+    //   "command": "g++",
+    //   "args": [
+    //     "-std=c++17",
+    //     ".\\code\\main.cpp",
+    //     "-c",
+    //     "-o",
+    //     ".\\execution\\objects\\main.o"
+    //   ]
+    // },
+    // {
+    //   "label": "compiling an every file 2",
+    //   "type": "shell",
+    //   "command": "g++",
+    //   "args": [
+    //     "-std=c++17",
+    //     ".\\code\\player.cpp",
+    //     "-c",
+    //     "-o",
+    //     ".\\execution\\objects\\player.o"
+    //   ]
+    // },
     {
-      "label": "compile c++",
+      "label": "compile an every active file",
       "type": "shell",
       "command": "g++",
       "args": [
         "-std=c++17",
-        ".\\source code\\*.cpp",
+        "${file}",
+        "-c",
+        "-o",
+        ".\\execution\\objects\\${fileBasenameNoExtension}.o"
+      ]
+    },
+    {
+      "label": "compile and combine all file",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-std=c++17",
+        ".\\execution\\objects\\*.o",
         "-o",
         ".\\execution\\main.exe"
       ]
     },
     {
-      "label": "run c++",
+      "label": "run and build c++",
       "type": "shell",
-      "command": ".\\execution\\main",
+      "command": ".\\execution\\main.exe",
       "dependsOn": ["compile c++"],
       "group": {
         "kind": "build",
