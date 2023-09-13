@@ -368,4 +368,49 @@ sebagai guard untuk tidak di deefiisikan secara berulang lagi
 // OOP -12 Ends //
 
 // OOP -13 starts //
+public private acess class
+
+public : dapat diakses oleh semua tempat
+private : hanya dapat diakses oleh kelas itu sendiri 
+
+class NamaKelas {
+	// attributes
+	public :
+
+	// args
+
+	private :
+	
+	// args
+	
+	// member function	
+
+	public :
+	
+	// args 
+	
+	private :
+	
+	// args 
+	
+};
+
+diatas adalah template acces modifier untuk priblic dan orivate keyword.
+
 // OOP -13 ends //
+
+// OOP -14 starts //
+
+getter and setter (Encapsulasi)
+getter and setter adalah menyimpan sebuah data kedalam class dimana hanya dapat di fungsikan dengan mendapatkan data atau get data atau set data yang dilakukan di belakang layar.
+
+getter mengambil sebuah data;
+setter mengeset sebuah data yang dilakukan di belakang layar 
+
+// OOP -14 ends //
+
+// OOP -15 starts //
+latihan encapsulasi
+
+
+// OOP -15 ends

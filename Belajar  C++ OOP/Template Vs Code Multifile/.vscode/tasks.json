@@ -1,0 +1,40 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "compile each file",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-std=c++17",
+        "${file}",
+        "-c",
+        "-o",
+        ".\\execute\\objects\\${fileBasenameNoExtension}.o"
+      ]
+    },
+    {
+      "label": "compile and combine",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-std=c++17",
+        ".\\execute\\objects\\*.o",
+        "-o",
+        ".\\execute\\main.exe"
+      ]
+    },
+    {
+      "label": "run c++",
+      "type": "shell",
+      "command": ".\\execute\\main.exe",
+      "dependsOn": ["compile and combine"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}

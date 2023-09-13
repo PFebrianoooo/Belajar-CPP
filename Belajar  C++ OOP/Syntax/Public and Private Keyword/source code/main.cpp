@@ -1,38 +1,21 @@
-// Online C++ compiler to run C++ program online
 #include <iostream>
+#include <string>
 
+#include "Mahasiswa.hpp"
 using namespace std;
 
 int main()
 {
+    Mahasiswa *mahasiswa1 = new Mahasiswa("nama");
+    cout << mahasiswa1->NamePublic << endl; // karena public maka dapat di akses
+    // cout << mahasiswa1->NamePrivate << endl; karena private tidak dapat diakses
 
-    int jml;
+    Mahasiswa *mahasiswa2 = new Mahasiswa("marissa");
+    mahasiswa2->TampilDataPublic(); // dapat dilakukan karena fungsi berada di public
+    // mahasiswa2->TampilDataPrivate // tidak dapat dilakuakn karena fungsi berada di private
 
-    cout << "masukkan jumlah data : ";
-    cin >> jml;
-
-    cout << "data ganjil" << endl;
-
-    cout << "[ ";
-    for (int i = 1; i <= jml; i += 2)
-    {
-        cout << i << " ";
-    }
-    cout << "]";
-
-    cout << endl;
-
-    cout << "data genap" << endl;
-
-    cout << "[ ";
-    for (int i = 0; i <= jml; i += 2)
-    {
-        if (i > 1)
-        {
-            cout << i << " ";
-        }
-    }
-    cout << "]";
+    Mahasiswa *mahasiswa3 = new Mahasiswa("Bang Jalak");
+    mahasiswa3->TampilDataPublic();
 
     return 0;
 }
