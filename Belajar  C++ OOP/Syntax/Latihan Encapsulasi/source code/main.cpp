@@ -1,5 +1,6 @@
 /*/
 encapssulasi antara 2 objek yang saling berinteraksi dengan getter and setter method
+
 */
 
 #include <iostream>
@@ -53,12 +54,12 @@ public:
 
     void Display()
     {
-        cout << "\nNama Player Anda Adalah = " << this->Name << endl;
+        cout << "Nama Player Anda Adalah = " << this->Name << endl;
         cout << "Menggunakan senjata " << this->weapon->GetName() << endl;
         this->weapon->Display();
     }
 
-    // setter
+    // getter
     void EquipWeapon(Weapon *weapon)
     {
         this->weapon = weapon;
@@ -68,6 +69,8 @@ public:
     {
         return this->Name;
     }
+    // setter
+    // setter ini berfungsi untuk menarik semua item di kelas weapon
 
     void Attack(Player *player)
     {
@@ -87,7 +90,7 @@ public:
     void Defence(double damage)
     {
         this->Health -= damage;
-        cout << this->Name << " mendapatkan damage sebesar " << damage << endl;
+        cout << this->Name << " memberikan damage sebesar " << damage << " kepada lawan " << endl;
 
         if (this->Health <= 0)
         {
@@ -116,8 +119,10 @@ main()
 
     player1->Attack(player2);
     player2->Attack(player1);
-     
+
+    cout << endl;
     player1->Display();
+    cout << endl;
     player2->Display();
 
     player1->Attack(player2);

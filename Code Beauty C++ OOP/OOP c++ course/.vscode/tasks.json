@@ -17,7 +17,7 @@
     {
       "label": "run c++",
       "type": "shell",
-      "command": ".\\execution\\main.exe",
+      "command": ".\\execution\\main",
       "dependsOn": ["compile c++"],
       "group": {
         "kind": "build",

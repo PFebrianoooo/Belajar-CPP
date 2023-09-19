@@ -69,7 +69,7 @@ dapat diakses oleh siapapun diluar kelas
 2. privat 
 hanya dapat diakses oleh didalam kelas
 3. protected
-hanya dapat diakses oleh kelas me deirved class ini
+hanya dapat diakses oleh kelas me inherit kelas ini dan didalam kelas itu sendiri.
 
 // OOP -3 ends //
 
@@ -412,5 +412,131 @@ setter mengeset sebuah data yang dilakukan di belakang layar
 // OOP -15 starts //
 latihan encapsulasi
 
+// OOP -15 ends //
 
-// OOP -15 ends
+// OOP -16 starts //
+Default assingnment
+
+default asignment adalah sebuah operator yang akan di jalankan meskipun tidak diisi oleh parameter.
+
+walaupun dalam parameter tidak ada yang di inoutkan atau di parameterkan maka akan menjalankan fungsi default tersebut
+
+misalkan
+
+constructor (const char * name = "bandu"){
+this->name = name ;
+}
+
+main(){
+constuctor();
+}
+
+maka hasil display yang output adalah bandu walaupun tidak di inputkan karakter di dalam kurungnya.
+
+salah satu kelebihan default asignment adalah ketika di compile tidak error padahal belum di inpputkan isinya.
+
+// OOP -16 ends //
+
+// OOP -17 starts //
+const objek dan member function
+
+const figunakan untuk mengkonstankan atau mengunci sebuah attribut objek agar tidak bisa dirubah attributnya
+
+1. objek yang konstan makan bisa di panggil atau dapat menggunakan method yang konstan juga
+2. objek yang tidak konstan maka dapat memanggil semua atau seluruh fungsi atau method
+
+initialisation
+
+// untuk di objek 
+const Player player2 = Player("Banteng_Betawi");
+
+// untuk di fungsi atau method
+void Display() const
+{
+	cout << "Nama Player adalah " << this->Nama << endl;
+}
+
+
+// OOP -17 ends //
+
+// OOP -18 starts //
+Friend function
+
+friend fuunction adalah fungsi dimana dapat mengakses bagian dari sebuah kelas dengan meng inherit kelas. 
+friend adalah sebuah keyword untuk function yang nantinya akan bisa mengakses attributes private.
+
+deklarasi friend function bisa di lakukan di dalam kelas atau diluar kelas
+
+selengkapny pada syntax
+// OOP -18 ends //
+
+// OOP -19 starts //
+friend class 
+
+friend class adalah cara passing attributes atau fungsi dengan mendefinisikan kelas yang mau di passingkan nilainya diatas attribut kelas yang mau di passing.
+
+hasilnya friend class dapat mengakses seluruh resource dari kelas yang mendeklarasikannya termasuk attribut dan fungsi fungsi didalamnya.
+
+friend class hanya berlaku 1 arah.
+
+
+initialisation.
+
+class Map{
+friend class Player;
+	private:
+	int Coordinates;
+	public:
+	void coordinates(const Player &obj){
+	// contoh passing parfameter.
+	cout << coordinates << obj.health <<  endl;
+
+};
+
+class Player {
+	
+private:
+int health;
+string name;
+
+public:
+void Display (){
+// args
+}
+
+};
+// OOP -19 ends //
+
+// OOP -20 starts //
+this vs cascading function calls
+
+cascading function calls adalah cara pembuatan fungsi dengan jauh lebih practical menggunakan cascading function calls. yaitu bisa menumpuk fungsi fungsi dengan menggunaka comma operator.
+
+intitialistation
+
+Player& SetNamaDepan(const char * depan){
+	this->NamaDepan = depan;
+	return *this;
+}
+
+dengan menggunakan cascading function calls source code jauh lebih sederhana dan juga lebih ringkas penggunaannya.
+
+
+// OOP -20 ends //
+
+// OOP -21 starts //
+static class member
+
+static class member adalah sebuah attribut statis dimana hidupnya di level kelas.
+
+di deklarasikan didalam kelas
+
+static TipeaData Namavar
+ex : static int count;
+
+penjabaran diluar kelas 
+int NamaKelas Nama = isinya atau args
+
+bisa digunakan untuk menghitung jumlah daripada objek objek yang hidup.
+
+// OOP -21 ends //
