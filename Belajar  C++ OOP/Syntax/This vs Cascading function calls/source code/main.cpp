@@ -63,7 +63,6 @@ int main(int argc, char const *argv[])
     player1.Display();
 
     // dengam menggunakan cascading function calls
-
     player1.SetNamaDepan("otong").SetNamaTengah("gascoigne").SetNamaBelakang("ilarramendi");
     player1.Display();
     return 0;

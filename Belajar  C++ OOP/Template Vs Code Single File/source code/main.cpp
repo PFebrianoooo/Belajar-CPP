@@ -2,10 +2,13 @@
 
 using namespace std;
 
+class Mahasiswa
+{
+};
+
 int main()
 {
-    cout << "hello world" << endl;
-    cout << "welcome to my tempplate c++" << endl;
+    Mahasiswa mhs1;
 
     return 0;
 }
